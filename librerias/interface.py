@@ -11,13 +11,13 @@ notices must be preserved. Contributors provide an express grant of patent right
 from tkinter import *
 
 def interface(titulo, icono, ancho, alto, color, redimencionamiento):
-   raiz = Tk()
-   titulo_texto(raiz, titulo)
-   titulo_icono(raiz, icono)
-   dimenciones(raiz, ancho, alto)
-   color_fondo(raiz, color)
-   impedir_redimencionamiento(raiz, redimencionamiento)
-   raiz.mainloop()
+    raiz = Tk()
+    titulo_texto(raiz, titulo)
+    titulo_icono(raiz, icono)
+    dimenciones(raiz, ancho, alto)
+    color_fondo(raiz, color)
+    impedir_redimencionamiento(raiz, redimencionamiento)
+    raiz.mainloop()
 
 def impedir_redimencionamiento(raiz, redimencionamiento):
     if (redimencionamiento == "horizontal"):
