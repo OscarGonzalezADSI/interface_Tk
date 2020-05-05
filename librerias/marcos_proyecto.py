@@ -13,62 +13,7 @@ import librerias.traduccion as trd
 import librerias.interface as lbr
 import librerias.EtiquetasTexto as lbtex
 import librerias.general as lbgen
-
-#---------------------------------------------------------
-# fase 3
-#---------------------------------------------------------  
-def marco_3(raiz, color_marco, ancho_marco, alto_marco, tam_borde, estilo_borde, tipo_cursor, redimencionamiento, sentido):
-    sentido = trd.traduccion(redimencionamiento, sentido)
-    
-    miframe = Frame(raiz, width = 500, height = 100)
-    lbgen.paquetado(miframe)
-    constructor(miframe)
-
-def etiqueta_texto(miframe):
-    modo = "paquete"
-    # modo = "ubicacion"
-    # modo = "formato"
-    milabel_x = 10  # modo   "formato"   "ubicacion"
-    milabel_y = 10  # modo   "formato"   "ubicacion"
-    texto = "hola"  # modo   "formato"   "ubicacion"
-    color = "red"   # modo   "formato"
-    tam = 30        # modo   "formato"
-    tipo_letra = "Comic Sans MS" # admite valor vacio "", "Comic Sans MS"
-    lbtex.etiquetas_modo(miframe, modo, milabel_x, milabel_y, texto, color, tam, tipo_letra)
-
-def etiqueta_texto2(miframe):
-    # modo = "paquete"
-    modo = "ubicacion"
-    # modo = "formato"
-    milabel_x = 10  # modo   "formato"   "ubicacion"
-    milabel_y = 30  # modo   "formato"   "ubicacion"
-    texto = "hola"  # modo   "formato"   "ubicacion"
-    color = "red"   # modo   "formato"
-    tam = 30        # modo   "formato"
-    tipo_letra = "Comic Sans MS" # admite valor vacio "", "Comic Sans MS"
-    lbtex.etiquetas_modo(miframe, modo, milabel_x, milabel_y, texto, color, tam, tipo_letra)
-
-def etiqueta_texto3(miframe):
-    # modo = "paquete"
-    # modo = "ubicacion"
-    modo = "formato"
-    milabel_x = 10  # modo   "formato"   "ubicacion"
-    milabel_y = 50  # modo   "formato"   "ubicacion"
-    texto = "hola"  # modo   "formato"   "ubicacion"
-    color = "red"   # modo   "formato"
-    tam = 30        # modo   "formato"
-    tipo_letra = "Comic Sans MS" # admite valor vacio "", "Comic Sans MS"
-    lbtex.etiquetas_modo(miframe, modo, milabel_x, milabel_y, texto, color, tam, tipo_letra)
-
-def constructor(miframe):
-    # etiqueta_texto(miframe)
-    etiqueta_texto2(miframe)
-    etiqueta_texto3(miframe)
-  
-  
-  
-  
-  
+ 
 #---------------------------------------------------------
 # # fase 2
 #---------------------------------------------------------
